@@ -1,12 +1,24 @@
 package com.domain.java;
 
 import java.io.BufferedReader;
-import java.io.File;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+
+/**
+ * Reads the number of messages from the source file. 
+ * Returns and count the number of all messages and classifies them as spam or non-spam messages
+ * 
+ * 
+ * @author Michał Siwiak
+ * @version 1.0
+ *
+ * @param  	fileName an absolute URL giving the base location of database
+ * @return  number of messages
+ */
 public class SPAMqualifier {
 	public static void main(String[] args) {
 
