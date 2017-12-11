@@ -1,5 +1,7 @@
 package com.domain.java;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -7,10 +9,10 @@ import java.util.ArrayList;
 
 public class SPAMqualifier {
 	public static void main(String[] args) {
-		String fileName = "D:\\Moje Dokumenty\\Downloads\\zadania_zestaw4\\spambase\\spambase.data";
 
-		try (FileReader fileReader = new FileReader(fileName);
-				BufferedReader reader = new BufferedReader(fileReader);) {
+		String fileName = "spambase.data";
+
+		try (BufferedReader reader = new BufferedReader(new FileReader(fileName));) {
 			String nextLine = null;
 			int lines = 0;
 			ArrayList<ArrayList<Double>> messages = new ArrayList<ArrayList<Double>>();
